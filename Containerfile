@@ -8,7 +8,7 @@ LABEL com.github.containers.toolbox="true" \
       maintainer="Ash Logan <ash@heyquark.com>"
 
 RUN apk update && \
-	apk add adelie-base libcap sudo bash && \
+	apk add adelie-base-lsb libcap sudo bash && \
 	rm -rf /var/cache/apk
 
 # Enable sudo permission for wheel users
